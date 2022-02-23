@@ -5,6 +5,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+    --color_header:white;
+    --text_color:black;
+
+}
 /* header */
 .main_header {
     background-image: url(../img/jumbo.png);
@@ -15,4 +20,50 @@
 .header_container{
     margin: 0 auto;
     width: 1200px;
+}
+
+.header_menu::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header_menu{
+    padding: 2rem;
+    color: var(--color_header);
+}
+
+
+.box_logo, .navbar, .log_in, ul li{
+   display: inline-block;
+}
+
+.box_logo{
+    vertical-align: middle;
+}
+
+.navbar{
+    text-align: center;
+    width: 80%;  
+}
+
+ul li{
+    text-decoration: none;
+     font-weight:500;
+    padding-right: 2rem;   
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color_header);
+}
+
+
+.s_button{
+    background-color: var(--color_header);
+    color: var(--text_color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 20px;
 }
