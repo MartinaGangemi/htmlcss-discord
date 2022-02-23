@@ -32,7 +32,7 @@
 
 .header_container, .float_container, .center_section{
     margin: 0 auto;
-    width: 1200px;   
+    width: 1300px;   
 }
 
 
@@ -176,8 +176,9 @@ p{
     width: 60%;
 }
 
-  .col_60, .col_45{
+  .col_60, .col_40{
       padding: 4rem;
+      
   }
 
   .col_30{
@@ -235,7 +236,8 @@ p{
 }
 .center_section{
     text-align: center;
-    padding: 3rem 0 8rem 0rem;
+    padding: 5rem 0 8rem 0rem;
+    width: 60%;
    
 }
 
