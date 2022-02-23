@@ -8,23 +8,28 @@
 :root{
     --light_color:white;
     --text_color:black;
-
+    --dark_color:#23272A;
 }
 /* header */
-.main_header {
+
+#main_header{
     background-image: url(../img/jumbo.png);
-    background-size: cover;
+    background-size: cover;   
+}
+
+
+.site_container{
     height: 65vh;
-    position: relative;
+    position: relative;    
 }
 
-.header_container{
+.header_container, .float_container{
     margin: 0 auto;
-    width: 1200px;
-    color: var(--light_color) ;
+    width: 1500px;
+    
 }
 
-.header_menu::after{
+.site_container::after{
     content: "";
     clear: both;
     display: table;
@@ -86,7 +91,7 @@ a{
 }
 
 .dark_button{
-    background-color: #23272A;
+    background-color: var(--dark_color);
     color: var(--light_color);
 }
 
@@ -99,8 +104,8 @@ main{
     transform: translate(-50%,-50%);
     text-align: center;
     width: 46%;
-    font-weight: 500;
-    line-height: 1.8rem;
+    
+    color: var(--light_color);
 }
 
 h1{
@@ -109,6 +114,12 @@ h1{
     font-weight: 600;
 }
 
+h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
 p{
     font-size: 1.1rem;
     margin-bottom: 4rem;
@@ -116,4 +127,56 @@ p{
 
 .download_button{
     text-align: center;  
+}
+
+.col_35{
+    float: left;
+    width: 35%;
+}
+
+.col_60{
+    float: left;
+    width: 60%;
+}
+
+.float_container::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col_60, .col_35{
+      padding: 4.5rem;
+  }
+
+  .float_container{
+      color: var(--dark_color);
+  }
+
+  p{
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.8rem;
+      font-weight: 500;
+  }
+
+
+  /*effect waves*/
+
+  .background_gray{
+    background-color: #F6F6F6;
+    height: 50%;
+  }
+
+  .bg_wave{
+    background-image: url(../img/wave.svg);
+    background-repeat: no-repeat;
+    height: 120px;
+    background-color: var(--light_color);
+   background-size: cover;
+}
+
+.rotate{
+    transform: rotate(180deg);
 }
