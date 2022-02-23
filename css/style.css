@@ -6,7 +6,7 @@
 }
 
 :root{
-    --color_header:white;
+    --light_color:white;
     --text_color:black;
 
 }
@@ -14,12 +14,14 @@
 .main_header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    height: 70vh;
+    height: 65vh;
+    position: relative;
 }
 
 .header_container{
     margin: 0 auto;
     width: 1200px;
+    color: var(--light_color) ;
 }
 
 .header_menu::after{
@@ -30,7 +32,7 @@
 
 .header_menu{
     padding: 2rem;
-    color: var(--color_header);
+    color: var(--light_color);
 }
 
 
@@ -42,6 +44,7 @@
     vertical-align: middle;
 }
 
+/*navbar*/
 .navbar{
     text-align: center;
     width: 80%;  
@@ -58,12 +61,59 @@ a{
     color: var(--text-color_header);
 }
 
+/*button type*/
 
 .s_button{
-    background-color: var(--color_header);
-    color: var(--text_color);
     font-weight: 500;
     font-size: 0.9rem;
     padding: 0.5rem 1rem 0.5rem;
     border-radius: 20px;
+}
+
+.m_button{
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem 1.2rem;
+    border-radius: 30px;   
+    margin: 1rem;
+    font-family: Helvetica, sans-serif;    
+}
+
+
+.white_button{
+    background-color: var(--light_color);
+    color: #23272A; 
+}
+
+.dark_button{
+    background-color: #23272A;
+    color: var(--light_color);
+}
+
+/*main*/
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 46%;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;   
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+.download_button{
+    text-align: center;  
 }
